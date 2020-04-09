@@ -1,0 +1,12 @@
+app-home {
+  display: flex;
+}
+
+app-home .home-component {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}

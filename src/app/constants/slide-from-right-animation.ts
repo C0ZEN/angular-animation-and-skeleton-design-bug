@@ -5,6 +5,7 @@ import {
   query,
   style
 } from "@angular/animations";
+import { ANIMATION_SPEED } from "./animation-speed";
 
 export const SLIDE_FROM_RIGHT_ANIMATION = [
   style({
@@ -46,7 +47,7 @@ export const SLIDE_FROM_RIGHT_ANIMATION = [
         "z-index": 1
       }),
       animate(
-        "350ms ease-out",
+        `${ANIMATION_SPEED}ms ease-out`,
         style({
           transform: "translateX(100%)"
         })
