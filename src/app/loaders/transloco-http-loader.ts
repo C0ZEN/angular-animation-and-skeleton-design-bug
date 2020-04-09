@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Inject, Injectable, PLATFORM_ID } from "@angular/core";
 import { Translation, TranslocoLoader } from "@ngneat/transloco";
 import { Observable } from "rxjs";
-import cacheBusting from "../../../assets/i18n-cache-busting.json";
+import cacheBusting from "../../assets/i18n-cache-busting.json";
 
 @Injectable({
   providedIn: "root"

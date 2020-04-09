@@ -19,6 +19,7 @@ import {
 import { TranslocoMessageFormatModule } from "@ngneat/transloco-messageformat";
 import { TranslocoHttpLoader } from "./loaders/transloco-http-loader";
 import { HttpClientModule } from "@angular/common/http";
+import { TRANSLOCO_CONFIG_PROVIDER } from "./providers/transloco-config-provider";
 
 const i18nLocalForage: LocalForage = localForage.createInstance({
   description: "storage for the translation files",
@@ -77,6 +78,7 @@ const i18nLocalForage: LocalForage = localForage.createInstance({
     )
   ],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [TRANSLOCO_CONFIG_PROVIDER]
 })
 export class AppModule {}
