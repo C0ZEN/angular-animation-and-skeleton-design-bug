@@ -11,6 +11,12 @@ app-error .error-component {
   color: white;
 }
 
+app-error .error-component .title-fake {
+  width: 60px;
+  height: 20px;
+  background-color: grey;
+}
+
 app-error .error-component button {
   align-self: flex-start;
 }

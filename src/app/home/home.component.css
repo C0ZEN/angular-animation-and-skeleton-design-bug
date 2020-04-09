@@ -11,6 +11,12 @@ app-home .home-component {
   color: white;
 }
 
+app-home .home-component .title-fake {
+  width: 60px;
+  height: 20px;
+  background-color: grey;
+}
+
 app-home .home-component button {
   align-self: flex-start;
 }

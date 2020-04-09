@@ -1,4 +1,12 @@
 <div class="home-component">
 	<h1>home component</h1>
+  <ng-container *transloco="let translation; scope: 'home'; loadingTpl: titleLoadingTemplate">
+		<p class="title">
+			{{ translation('home.title') }}
+		</p>
+	</ng-container>
+	<ng-template #titleLoadingTemplate>
+		<p class="title title-fake"></p>
+	</ng-template>
 	<button [routerLink]="['/error']">Go to error page</button>
 </div>

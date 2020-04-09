@@ -15,11 +15,7 @@ export class AppComponent {
   public prepareRoute(routerOutlet: RouterOutlet): string | null {
     if (routerOutlet) {
       if (routerOutlet.activatedRouteData) {
-        const pageName = routerOutlet.activatedRouteData["animation"];
-
-        console.log(pageName);
-
-        return pageName;
+        return routerOutlet.activatedRouteData["animation"];
       }
     }
 
