@@ -10,7 +10,7 @@ import { ErrorComponent } from "./error.component";
       {
         component: ErrorComponent,
         data: {
-          name: "error"
+          animation: "error"
         },
         path: "**"
       }

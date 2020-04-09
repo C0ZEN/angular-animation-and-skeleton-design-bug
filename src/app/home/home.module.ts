@@ -10,7 +10,7 @@ import { HomeComponent } from "./home.component";
       {
         component: HomeComponent,
         data: {
-          name: "home"
+          animation: "home"
         },
         path: "**"
       }
