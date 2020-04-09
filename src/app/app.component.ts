@@ -12,13 +12,18 @@ import { PAGE_ANIMATION } from "./constants/page-animation";
 export class AppComponent {
   public constructor(private readonly renderer: Renderer2) {}
 
-  public prepareRoute(routerOutlet: RouterOutlet): string {
-    console.log('prepareRoute');
-    return (
-      routerOutlet &&
-      routerOutlet.activatedRouteData &&
-      routerOutlet.activatedRouteData["animation"]
-    );
+  public prepareRoute(routerOutlet: RouterOutlet): string | null {
+    if (routerOutlet) {
+      if (routerOutlet.activatedRouteData) {
+        const pageName = routerOutlet.activatedRouteData["animation"];
+
+        console.log(pageName);
+
+        return pageName;
+      }
+    }
+
+    return null;
   }
 
   public animationStart(): void {
