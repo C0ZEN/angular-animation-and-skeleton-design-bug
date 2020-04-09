@@ -1,3 +1,7 @@
-p {
-  font-family: Lato;
+:host {
+  display: block;
+}
+
+:host .app-content {
+    display: block;
 }

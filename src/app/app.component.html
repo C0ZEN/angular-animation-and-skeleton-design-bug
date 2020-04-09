@@ -1,4 +1,4 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div (@pageAnimation.done)="animationEnd()" (@pageAnimation.start)="animationStart()"
+	[@pageAnimation]="prepareRoute(outlet)" class="app-content">
+	<router-outlet #outlet="outlet"></router-outlet>
+</div>
