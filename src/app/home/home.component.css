@@ -1,12 +1,16 @@
 app-home {
   display: flex;
-}
-
-app-home .home-component {
   height: 100vh;
   width: 100vw;
   background-color: blue;
+}
+
+app-home .home-component {
   display: flex;
   flex-direction: column;
   color: white;
+}
+
+app-home .home-component button {
+  align-self: flex-start;
 }
